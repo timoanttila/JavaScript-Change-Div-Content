@@ -8,8 +8,7 @@ I think this is the easiest way to update price field.
 onchange="changePrice(this)"
 <script>
   function changePrice(el) {
-    var item = JSON.parse(atob(el.value));
-    document.getElementById("main_price").innerHTML = item["price"].toFixed(2);
+    document.getElementById("main_price").innerHTML = el.value.toFixed(2);
   }
 </script>
 ```
