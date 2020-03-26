@@ -1,8 +1,8 @@
 <div id="price"><span id="value">10.00</span> €</div>
 
 <div id="prices">
-  <label for='sizes'>Valitse koko</label>
-  <select id='sizes' name='extra_sizes' class='custom' onchange='changePrice(this)'>
+  <label for="sizes">Valitse koko</label>
+  <select id="sizes" name="extra_sizes" onchange="changePrice(this)">
   <?php
     foreach($page->shop_sizes_price as $item){
       echo "<option value='". base64_encode(json_encode(array(
